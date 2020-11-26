@@ -23,7 +23,7 @@
     "commands": [
       {
         "command": "fast-snippet.start",
-        "title": "Input name and select template"
+        "title": "Fast Snippet(Input name and select template)"
       }
     ],
     "configuration": [
