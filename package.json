@@ -2,11 +2,13 @@
   "name": "fast-snippet",
   "displayName": "fast-snippet",
   "description": "a vscode extensions for fast write snippet to clipboard and rename",
+  "keywords": ["fast", "snippet", "copy", "paste", "template"],
   "author": "youniaogu",
   "publisher": "youniaogu",
   "icon": "static/logo.png",
+  "bugs": "https://github.com/youniaogu/fast-snippet/issues",
   "repository": "https://github.com/youniaogu/fast-snippet",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "engines": {
     "vscode": "^1.51.0"
   },
@@ -21,8 +23,21 @@
     "commands": [
       {
         "command": "fast-snippet.start",
-        "title": "Fast Snippet"
+        "title": "Input name and select template"
       }
+    ],
+    "configuration": [
+			{
+        "type": "object",
+        "title": "Fast-snippet configuration",
+        "properties": {
+					"fastSnippet.template": {
+						"type": "object",
+            "description": "Code template",
+            "default": {}
+          }
+        }
+			}
     ]
   },
   "scripts": {
@@ -51,5 +66,6 @@
     "ts-loader": "^8.0.3",
     "webpack": "^4.44.1",
     "webpack-cli": "^3.3.12"
-  }
+  },
+  "license": "MIT"
 }
