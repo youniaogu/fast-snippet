@@ -37,7 +37,7 @@ class Main {
   }
 
   showInput() {
-    return window.showInputBox().then((data) => {
+    return window.showInputBox({ placeHolder: 'please enter a name' }).then((data) => {
       if (!data) {
         return Promise.reject(new Error('关键字为空'));
       }
@@ -51,7 +51,7 @@ class Main {
   showOption(option = this.option) {
     const list = option.map((item) => item.label);
 
-    window.showQuickPick(list).then((data) => {
+    window.showQuickPick(list, { placeHolder: 'choose a template' }).then((data) => {
       if (!data) {
         return;
       }
