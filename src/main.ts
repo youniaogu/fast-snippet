@@ -39,7 +39,7 @@ class Main {
   showInput() {
     return window.showInputBox({ placeHolder: 'please enter a name' }).then((data) => {
       if (!data) {
-        return Promise.reject(new Error('关键字为空'));
+        return Promise.reject(new Error('name is empty'));
       }
 
       this.name = data;

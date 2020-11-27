@@ -6,13 +6,17 @@ a vscode extensions for fast write snippet to clipboard
 
 replace snippet keyword by rule and copy to clipboard
 
-rule:
+ruleList:
 
-| e.g name              | loadUserInfo     |
-| --------------------- | ---------------- |
-| `#NAME#`              | `loadUserInfo`   |
-| `#FIRSET_UPPER_NAME#` | `LoadUserInfo`   |
-| `#UPPER_NAME#`        | `LOAD_USER_INFO` |
+e.g name: loadUserInfo
+
+| keyword                  | result           |
+| ------------------------ | ---------------- |
+| `#NAME#`                 | `loadUserInfo`   |
+| `#UPPER_NAME#`           | `LOADUSERINFO`   |
+| `#FIRSET_UPPER_NAME#`    | `LoadUserInfo`   |
+| `#UPPER_UNDERLINE_NAME#` | `LOAD_USER_INFO` |
+| `#LOWER_NAME#`           | `loaduserinfo`   |
 
 E.g:
 
