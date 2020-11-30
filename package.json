@@ -37,6 +37,19 @@
         "title": "Create Snippet"
       }
     ],
+    "keybindings": [
+      {
+        "command": "fast-snippet.menu",
+        "key": "ctrl+shift+v",
+        "mac": "cmd+shift+v",
+        "when": "editorHasSelection"
+      },
+      {
+        "command": "fast-snippet.start",
+        "key": "ctrl+shift+c",
+        "mac": "cmd+shift+c"
+      }
+    ],
     "configuration": [
       {
         "type": "object",
