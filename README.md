@@ -6,7 +6,7 @@ a vscode extensions for fast write snippet to clipboard
 
 replace snippet keyword by rule and copy to clipboard
 
-ruleList:
+#### 1.1 rule table
 
 e.g name: loadUserInfo
 
@@ -20,9 +20,9 @@ e.g name: loadUserInfo
 
 E.g:
 
-![](static/pic1.gif)
+![](static/base_case.gif)
 
-#### snippet:
+#### 1.2 snippet:
 
 ```javascript
 const template = `export const #UPPER_NAME# = Symbol('#UPPER_NAME#');
@@ -34,9 +34,9 @@ export function #NAME#() {
 }`;
 ```
 
-#### name: loadUserInfo
+#### 1.3 name: loadUserInfo
 
-#### output:
+#### 1.4 output:
 
 ```javascript
 export const LOAD_USER_INFO = Symbol('LOAD_USER_INFO');
@@ -48,9 +48,19 @@ export function loadUserInfo() {
 }
 ```
 
+#### 1.5 create multiple snippet:
+
+split name by spaces
+
+![](static/multiple_case.gif)
+
+#### 1.6 right click menu
+
+![](static/menu_case.gif)
+
 ### 2. Before use
 
-#### step 1: write a template(suggest use template string by es6)
+#### 2.1 step 1: write a template(suggest use template string by es6)
 
 E.g:
 
@@ -64,16 +74,16 @@ export function #NAME#() {
 }`;
 ```
 
-#### step 2: translate to common string(if es6)
+#### 2.2 step 2: translate to common string(if es6)
 
 [Babel online translator](https://babeljs.io/repl/#?browsers=&build=&builtIns=false&spec=false&loose=false&code_lz=FBA&debug=false&forceAllTransforms=false&shippedProposals=false&circleciRepo=&evaluate=true&fileSize=false&timeTravel=false&sourceType=module&lineWrap=false&presets=es2015%2Creact%2Cstage-2&prettier=false&targets=&version=7.12.9&externalPlugins=) can do it easy!
 
-![](static/pic2.png)
+![](static/template_translate.png)
 
-#### step 3: copy and put in `settings.json`
+#### 2.3 step 3: copy and put in `settings.json`
 
-setting name is call `fastSnippet.template`
+setting name is `fastSnippet.template`
 
-![](static/pic3.png)
+![](static/template_setting.png)
 
-#### step 4: enjoy it!
+#### 2.4 step 4: enjoy it!

@@ -1,5 +1,10 @@
 # Change Log
 
+## [0.1.0]-2020/11/30
+
+- can create multiple snippet by once
+- add command on context menu
+
 ## [0.0.3]-2020/11/27
 
 - more rule

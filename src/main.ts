@@ -11,7 +11,7 @@ type TemplateTypes = {
 };
 
 class Main {
-  public name: string = '';
+  public name: string[] = [];
   public option: OptionTypes[];
   constructor(template: TemplateTypes) {
     this.option = this.getOption(template);
@@ -36,15 +36,21 @@ class Main {
     });
   }
 
+  setName(name: string[]) {
+    this.name = name;
+
+    return this;
+  }
+
   showInput() {
     return window.showInputBox({ placeHolder: 'please enter a name' }).then((data) => {
       if (!data) {
         return Promise.reject(new Error('name is empty'));
       }
 
-      this.name = data;
+      this.name = data.split(' ');
 
-      return Promise.resolve();
+      return Promise.resolve(this.name);
     });
   }
 
@@ -70,7 +76,15 @@ class Main {
   }
 
   copy(str: string) {
-    env.clipboard.writeText(replaceName(str, this.name));
+    const texts = this.name.map((name) => {
+      if (name === '') {
+        return;
+      }
+
+      return replaceName(str, name);
+    });
+
+    env.clipboard.writeText(texts.join('\n\n'));
   }
 }
 
