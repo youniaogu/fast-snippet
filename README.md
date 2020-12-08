@@ -17,6 +17,7 @@ e.g name: loadUserInfo
 | `#FIRSET_UPPER_NAME#`    | `LoadUserInfo`   |
 | `#UPPER_UNDERLINE_NAME#` | `LOAD_USER_INFO` |
 | `#LOWER_NAME#`           | `loaduserinfo`   |
+| `#LOWER_UNDERLINE_NAME#` | `load_user_info` |
 
 E.g:
 
