@@ -10,7 +10,7 @@ type TemplateTypes = {
   [key: string]: string | TemplateTypes;
 };
 
-class Main {
+export default class Main {
   public name: string[] = [];
   public option: OptionTypes[];
   constructor(template: TemplateTypes) {
@@ -87,5 +87,3 @@ class Main {
     env.clipboard.writeText(texts.join('\n\n'));
   }
 }
-
-export default Main;

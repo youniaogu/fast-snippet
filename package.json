@@ -14,7 +14,7 @@
   "icon": "static/logo.png",
   "bugs": "https://github.com/youniaogu/fast-snippet/issues",
   "repository": "https://github.com/youniaogu/fast-snippet",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "engines": {
     "vscode": "^1.51.0"
   },
@@ -40,14 +40,14 @@
     "keybindings": [
       {
         "command": "fast-snippet.menu",
-        "key": "ctrl+shift+v",
-        "mac": "cmd+shift+v",
+        "key": "alt+shift+v",
+        "mac": "alt+shift+v",
         "when": "editorHasSelection"
       },
       {
         "command": "fast-snippet.start",
-        "key": "ctrl+shift+c",
-        "mac": "cmd+shift+c"
+        "key": "alt+shift+c",
+        "mac": "alt+shift+c"
       }
     ],
     "configuration": [

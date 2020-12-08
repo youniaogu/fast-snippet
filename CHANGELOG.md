@@ -1,5 +1,10 @@
 # Change Log
 
+## [0.1.1]-2020/12/08
+
+- change key bind
+- add lowerUnderlineName rule
+
 ## [0.1.0]-2020/11/30
 
 - can create multiple snippet by once
